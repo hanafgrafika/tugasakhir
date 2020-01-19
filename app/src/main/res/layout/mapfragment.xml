@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
     android:layout_height="match_parent">
 
-</LinearLayout>
+    <fragment
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:id="@+id/frg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btnback"
+        android:layout_width="50dp"
+        android:layout_marginBottom="20sp"
+        android:layout_height="50dp"
+        android:drawableTop="@drawable/back"
+        android:text="Home"
+        android:textSize="4dp"
+        android:layout_weight="1"
+        android:background="@drawable/custombtn1"
+        android:textColor="#ffffff" />
+
+
+</RelativeLayout>
